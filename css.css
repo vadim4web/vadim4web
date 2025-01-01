@@ -2,39 +2,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 142px;
+  font-size: 71px;
   font-weight: 700;
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .one {
   color:  var(--azure);
-  transform: translate(-50%, -35%);
-  -moz-transform: translate(-50%, -35%);
-  -ms-transform: translate(-50%, -35%);
-  -o-transform: translate(-50%, -35%);
-  -webkit-transform: translate(-50%, -35%);
-
+  transform: translate(-50%, -85%);
+  -moz-transform: translate(-50%, -85%);
+  -ms-transform: translate(-50%, -85%);
+  -o-transform: translate(-50%, -85%);
+  -webkit-transform: translate(-50%, -85%);
   text-shadow: 0 0 var(--shadow-width) var(--azure-plus);
   backdrop-filter: drop-shadow(0 0 var(--shadow-width) var(--azure-plus));
 }
 
 .two {
   color:  var(--gold);
-  transform: translate(-50%, 35%) rotate(180deg);
-  -moz-transform: translate(-50%, 35%) rotate(180deg);
-  -ms-transform: translate(-50%, 35%) rotate(180deg);
-  -o-transform: translate(-50%, 35%) rotate(180deg);
-  -webkit-transform: translate(-50%, 35%) rotate(180deg);
-
+  transform: translate(-50%, -15%) rotate(180deg);
+  -moz-transform: translate(-50%, -15%) rotate(180deg);
+  -ms-transform: translate(-50%, -15%) rotate(180deg);
+  -o-transform: translate(-50%, -15%) rotate(180deg);
+  -webkit-transform: translate(-50%, -15%) rotate(180deg);
   text-shadow: 0 0 var(--shadow-width) var(--gold-plus);
   backdrop-filter: drop-shadow(0 0 var(--shadow-width) var(--gold-plus));
 }
@@ -95,9 +88,9 @@ body {
   /* linkedin 1584 x 396 px	4:1 */
   width: calc(1584px + 2rem);
   height: calc(396px + 2rem);
-  /* facebook 820 x 360 px */
+  /* facebook 820 x 312 px */
   width: calc(820px + 2rem);
-  height: calc(360px + 2rem);
+  height: calc(312px + 2rem);
 }
 
 body:before {
@@ -108,7 +101,7 @@ body:before {
   width: 100%;
   height: 100%;
   background: url('./flag.jpg');
-  background-position: 20% 65%;
+  background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -133,7 +126,7 @@ pre:last-of-type {
 pre {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   font-weight: bold;
   overflow: hidden;
   margin: 0;
