@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 71px;
+  font-size: 108px;
   font-weight: 700;
   position: absolute;
   top: 50%;
@@ -12,22 +12,22 @@
 
 .one {
   color:  var(--azure);
-  transform: translate(-50%, -85%);
-  -moz-transform: translate(-50%, -85%);
-  -ms-transform: translate(-50%, -85%);
-  -o-transform: translate(-50%, -85%);
-  -webkit-transform: translate(-50%, -85%);
+  transform: translate(-50%, -87.5%);
+  -moz-transform: translate(-50%, -87.5%);
+  -ms-transform: translate(-50%, -87.5%);
+  -o-transform: translate(-50%, -87.5%);
+  -webkit-transform: translate(-50%, -87.5%);
   text-shadow: 0 0 var(--shadow-width) var(--azure-plus);
   backdrop-filter: drop-shadow(0 0 var(--shadow-width) var(--azure-plus));
 }
 
 .two {
   color:  var(--gold);
-  transform: translate(-50%, -15%) rotate(180deg);
-  -moz-transform: translate(-50%, -15%) rotate(180deg);
-  -ms-transform: translate(-50%, -15%) rotate(180deg);
-  -o-transform: translate(-50%, -15%) rotate(180deg);
-  -webkit-transform: translate(-50%, -15%) rotate(180deg);
+  transform: translate(-50%, -12.5%) rotate(180deg);
+  -moz-transform: translate(-50%, -12.5%) rotate(180deg);
+  -ms-transform: translate(-50%, -12.5%) rotate(180deg);
+  -o-transform: translate(-50%, -12.5%) rotate(180deg);
+  -webkit-transform: translate(-50%, -12.5%) rotate(180deg);
   text-shadow: 0 0 var(--shadow-width) var(--gold-plus);
   backdrop-filter: drop-shadow(0 0 var(--shadow-width) var(--gold-plus));
 }
@@ -54,9 +54,9 @@
 .logo-letter.b { letter-spacing: 0; }
 
 .logo-image {
-  height: 71px;
-  width: 71px;
-  stroke-width: max(0.25vmin, 10px);
+  height: 126px;
+  width: 126px;
+  stroke-width: max(0.25vmin, 8px);
 }
 
 :root {
@@ -91,6 +91,9 @@ body {
   /* facebook 820 x 312 px */
   width: calc(820px + 2rem);
   height: calc(312px + 2rem);
+  /* github 1280 x 640 px */
+  width: calc(1280px + 2rem);
+  height: calc(640px + 2rem);
 }
 
 body:before {
@@ -126,7 +129,7 @@ pre:last-of-type {
 pre {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 0.75rem;
+  font-size: 1.375rem;
   font-weight: bold;
   overflow: hidden;
   margin: 0;
