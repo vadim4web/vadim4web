@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <title>VADIM4WEB</title>
+  <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+  <div class="logo-span one">
+    <span class="logo-letter v">V</span>
+    <span class="logo-letter a">A</span>
+    <span class="logo-letter d">D</span>
+    <span class="logo-letter i">I</span>
+    <span class="logo-letter m">M</span>
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-image">
+      <defs>
+        <filter id="shadow1" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="var(--azure-plus)" flood-opacity="1"/>
+        </filter>
+      </defs>
+      <line x1="50" y1="96" x2="50" y2="4" />
+      <line x1="50" y1="4" x2="4" y2="50" />
+      <line x1="4" y1="50" x2="50" y2="50" />
+      <path d="M 50,3.5 A 23.25,23.25,0,1,1,50,50" fill="none" />
+      <circle cx="50" cy="50" r="46" fill="none" />
+    </svg>
+    <span class="logo-letter w">W</span>
+    <span class="logo-letter e">E</span>
+    <span class="logo-letter b">B</span>
+  </div>
+  <div class="logo-span two">
+    <span class="logo-letter v">V</span>
+    <span class="logo-letter a">A</span>
+    <span class="logo-letter d">D</span>
+    <span class="logo-letter i">I</span>
+    <span class="logo-letter m">M</span>
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-image">
+      <defs>
+        <filter id="shadow2" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="var(--gold-plus)" flood-opacity="1"/>
+        </filter>
+      </defs>
+      <line x1="50" y1="96" x2="50" y2="4" />
+      <line x1="50" y1="4" x2="4" y2="50" />
+      <line x1="4" y1="50" x2="50" y2="50" />
+      <path d="M 50,3.5 A 23.25,23.25,0,1,1,50,50" fill="none" />
+      <circle cx="50" cy="50" r="46" fill="none" />
+    </svg>
+    <span class="logo-letter w">W</span>
+    <span class="logo-letter e">E</span>
+    <span class="logo-letter b">B</span>
+  </div>
+<pre data-title="template.html">
+&lt;template&gt;
+  &lt;span class=&quot;logo-span flex-center&quot;&gt;
+    &lt;span class=&quot;logo-letter v&quot;&gt;V&lt;/span&gt;
+    &lt;span class=&quot;logo-letter a&quot;&gt;A&lt;/span&gt;
+    &lt;span class=&quot;logo-letter d&quot;&gt;D&lt;/span&gt;
+    &lt;span class=&quot;logo-letter i&quot;&gt;I&lt;/span&gt;
+    &lt;span class=&quot;logo-letter m&quot;&gt;M&lt;/span&gt;
+    &lt;svg viewBox=&quot;0 0 100 100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;logo-image&quot;&gt;
+      &lt;defs&gt;
+        &lt;filter id=&quot;shadow&quot; x=&quot;-50%&quot; y=&quot;-50%&quot; width=&quot;200%&quot; height=&quot;200%&quot;&gt;
+          &lt;feDropShadow dx=&quot;0&quot; dy=&quot;0&quot; stdDeviation=&quot;1&quot; flood-color=&quot;#fff80&quot; flood-opacity=&quot;0.75&quot;/&gt;
+        &lt;/filter&gt;
+      &lt;/defs&gt;
+      &lt;!-- Vertical line --&gt;
+      &lt;line x1=&quot;50&quot; y1=&quot;96&quot; x2=&quot;50&quot; y2=&quot;4&quot; /&gt;
+      &lt;!-- Diagonal line from center to top-left --&gt;
+      &lt;line x1=&quot;50&quot; y1=&quot;4&quot; x2=&quot;4&quot; y2=&quot;50&quot; /&gt;
+      &lt;!-- Horizontal line from left to center --&gt;
+      &lt;line x1=&quot;4&quot; y1=&quot;50&quot; x2=&quot;50&quot; y2=&quot;50&quot; /&gt;
+      &lt;!-- Arc from top-center to center --&gt;
+      &lt;path d=&quot;M 50,3.5 A 23.25,23.25,0,1,1,50,50&quot; fill=&quot;none&quot; /&gt;
+      &lt;!-- Outer circle --&gt;
+      &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;46&quot; fill=&quot;none&quot; /&gt;
+    &lt;/svg&gt;
+    &lt;span class=&quot;logo-letter w&quot;&gt;W&lt;/span&gt;
+    &lt;span class=&quot;logo-letter e&quot;&gt;E&lt;/span&gt;
+    &lt;span class=&quot;logo-letter b&quot;&gt;B&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/template&gt;
+</pre>
+
+<pre data-title="styles.css">
+&lt;style&gt;
+  .logo-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vmin;
+    font-weight: 700;
+  }
+  .logo-letter.v { letter-spacing: -0.28ch; }
+  .logo-letter.a { letter-spacing: -0.05ch; }
+  .logo-letter.d { letter-spacing: -0.22ch; }
+  .logo-letter.i { letter-spacing: -0.075ch; }
+  .logo-letter.m { letter-spacing: 0.025ch; }
+  .logo-letter.w { letter-spacing: -0.05ch; }
+  .logo-letter.e { letter-spacing: -0.075ch; }
+  .logo-letter.b { letter-spacing: 0; }
+  .logo-image {
+    height: 3vmin;
+    width: 3vmin;
+    stroke-width: max(0.25vmin, 10px);
+    stroke: #fff;
+    filter: url(#shadow);
+  }
+&lt;/style&gt;
+</pre>
+
+<pre data-title="script.js">
+&lt;script&gt;
+export default {
+  circleIntersection: ([a, b], [x, y], r) => r * r * (-Math.sin((d = 2 * Math.acos(Math.hypot(x - a, y - b) / (2 * r)))) + d) | 0,
+
+  reverse: a => a.map(a.pop, [...a]),
+
+  productFib: (p) => {
+    let [a, b] = [1, 1]
+    while (a * b < p) [a, b] = [b, a + b]
+    return [a, b, a * b === p]
+  },
+
+  spinWords: s => s.replace(/\b\w{5,}\b/g, w => w.split('').reverse().join('')),
+
+  arrayDiff: (a, b) => a.filter(d => !b.includes(d)),
+
+  pigIt: s => s.replace(/\b(\w)(\w*)\b/g, '$2$1ay'),
+
+  longest: (a, b) => [...new Set(a + b)].sort().join(''),
+
+  nbYear: (p0, pr, a, p, y = 0) =>
+    p0 >= p ? y : nbYear(Math.floor(p0 * (1 + pr / 100) + a), pr, a, p, y + 1),
+
+  rot13: (m) => m.replace(/[a-zA-Z]/g, (c) => String.fromCharCode(c.charCodeAt(0) + (c.toLowerCase() < 'n' ? 13 : -13))),
+
+  chunk: (arr, size) => arr.reduce((A, e, i) => (i % size === 0 && A.push([]), A.at(-1).push(e), A), []),
+
+  join: (arr1, arr2) => [...arr1, ...arr2].reduce((a, o) => (a.find(e => e.id === o.id) ? Object.assign(a.find(e => e.id === o.id), o) : a.push(o), a), []).sort((a, b) => a.id - b.id),
+
+  translateToUkrainian: async (engText) => {
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=uk&dt=t&q=${engText}`
+    const response = await fetch(url)
+    const json = await response.json()
+    return json[0][0][0] || engText
+  }
+}
+&lt;/script&gt;
+</pre>
+</body>
+</html>

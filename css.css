@@ -1,0 +1,158 @@
+.logo-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 142px;
+  font-weight: 700;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.one {
+  color:  var(--azure);
+  transform: translate(-50%, -35%);
+  -moz-transform: translate(-50%, -35%);
+  -ms-transform: translate(-50%, -35%);
+  -o-transform: translate(-50%, -35%);
+  -webkit-transform: translate(-50%, -35%);
+
+  text-shadow: 0 0 var(--shadow-width) var(--azure-plus);
+  backdrop-filter: drop-shadow(0 0 var(--shadow-width) var(--azure-plus));
+}
+
+.two {
+  color:  var(--gold);
+  transform: translate(-50%, 35%) rotate(180deg);
+  -moz-transform: translate(-50%, 35%) rotate(180deg);
+  -ms-transform: translate(-50%, 35%) rotate(180deg);
+  -o-transform: translate(-50%, 35%) rotate(180deg);
+  -webkit-transform: translate(-50%, 35%) rotate(180deg);
+
+  text-shadow: 0 0 var(--shadow-width) var(--gold-plus);
+  backdrop-filter: drop-shadow(0 0 var(--shadow-width) var(--gold-plus));
+}
+
+.one svg {
+  stroke: var(--azure);
+  filter: url(#shadow1);
+  -webkit-filter: url(#shadow1);
+}
+
+.two svg {
+  stroke: var(--gold);
+  filter: url(#shadow2);
+  -webkit-filter: url(#shadow2);
+}
+
+.logo-letter.v { letter-spacing: -0.28ch; }
+.logo-letter.a { letter-spacing: -0.05ch; }
+.logo-letter.d { letter-spacing: -0.22ch; }
+.logo-letter.i { letter-spacing: -0.075ch; }
+.logo-letter.m { letter-spacing: 0.025ch; }
+.logo-letter.w { letter-spacing: -0.05ch; }
+.logo-letter.e { letter-spacing: -0.075ch; }
+.logo-letter.b { letter-spacing: 0; }
+
+.logo-image {
+  height: 71px;
+  width: 71px;
+  stroke-width: max(0.25vmin, 10px);
+}
+
+:root {
+  font-family: "Victor Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  --azure: #fff;
+  --azure-plus: #0056b9;
+  --gold: #000;
+  --gold-plus: #ffd800;
+  --shadow-width: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0;
+  border: 1rem solid white;
+
+  /* linkedin 1584 x 396 px	4:1 */
+  width: calc(1584px + 2rem);
+  height: calc(396px + 2rem);
+  /* facebook 820 x 360 px */
+  width: calc(820px + 2rem);
+  height: calc(360px + 2rem);
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./flag.jpg');
+  background-position: 20% 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+pre:first-of-type {
+  background: linear-gradient(-45deg, #FFDDC1, #FFABAB, #FFC3A0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+pre:nth-of-type(2) {
+  background: linear-gradient(-45deg, #4A90E2, #50E3C2, #B8E986);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+pre:last-of-type {
+  background: linear-gradient(-45deg, #F39C12, #E74C3C, #8E44AD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+pre {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.25rem;
+  font-weight: bold;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+pre::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: rgba(59, 47, 79, 0.75);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
