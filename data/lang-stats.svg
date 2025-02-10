@@ -1,0 +1,59 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+     <rect width="100%" height="100%" fill="#ffffff"/>
+     <text x="640" y="50" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">VADIM4WEB's Lang Stack (updated: 2025-02-10 18:07:09)</text>
+      <path d="M 890 360 A 250 250 0 0 1 509.7656110982108 573.3986971548269 
+              L 546.2312399907117 513.6470619514753 
+              A 180 180 0 0 0 
+              820 360 Z" 
+              fill="#41b883" style="filter: drop-shadow(0 0 5px #41b883)" />
+    
+      <text x="781.9315884034243" y="588.4767357600088" font-size="18" text-anchor="middle" fill="#41b883" style="filter: invert(1)">Vue</text>
+    
+      <path d="M 509.7656110982108 573.3986971548269 A 250 250 0 0 1 519.863372276111 140.75768957810243 
+              L 553.5016280387999 202.14553649623375 
+              A 180 180 0 0 0 
+              546.2312399907117 513.6470619514753 Z" 
+              fill="#f1e05a" style="filter: drop-shadow(0 0 5px #f1e05a)" />
+    
+      <text x="350.07895605453297" y="353.88663330195857" font-size="18" text-anchor="middle" fill="#f1e05a" style="filter: invert(1)">JavaScript</text>
+    
+      <path d="M 519.863372276111 140.75768957810243 A 250 250 0 0 1 710.1828992083867 120.05342123984047 
+              L 690.5316874300385 187.23846329268514 
+              A 180 180 0 0 0 
+              553.5016280387999 202.14553649623375 Z" 
+              fill="#e34c26" style="filter: drop-shadow(0 0 5px #e34c26)" />
+    
+      <text x="608.6368427192698" y="99.53670446551803" font-size="18" text-anchor="middle" fill="#e34c26" style="filter: invert(1)">HTML</text>
+    
+      <path d="M 710.1828992083867 120.05342123984047 A 250 250 0 0 1 880.7197982835743 292.51682643565664 
+              L 813.3182547641735 311.4121150336728 
+              A 180 180 0 0 0 
+              690.5316874300385 187.23846329268514 Z" 
+              fill="#663399" style="filter: drop-shadow(0 0 5px #663399)" />
+    
+      <text x="846.20946574067" y="175.7814771847522" font-size="18" text-anchor="middle" fill="#663399" style="filter: invert(1)">CSS</text>
+    
+      <path d="M 880.7197982835743 292.51682643565664 A 250 250 0 0 1 882.7296424370414 300.14750897092074 
+              L 814.7653425546698 316.90620645906296 
+              A 180 180 0 0 0 
+              813.3182547641735 311.4121150336728 Z" 
+              fill="#a53b70" style="filter: drop-shadow(0 0 5px #a53b70)" />
+    
+      <text x="920.4356014419241" y="293.26780083592695" font-size="18" text-anchor="middle" fill="#a53b70" style="filter: invert(1)">Sass</text>
+    
+      <path d="M 882.7296424370414 300.14750897092074 A 250 250 0 0 1 888.0484003930761 328.823228800336 
+              L 818.5948482830148 337.55272473624194 
+              A 180 180 0 0 0 
+              814.7653425546698 316.90620645906296 Z" 
+              fill="#c6538c" style="filter: drop-shadow(0 0 5px #c6538c)" />
+    
+      <text x="925.1367448358941" y="312.21931416207" font-size="18" text-anchor="middle" fill="#c6538c" style="filter: invert(1)">SCSS</text>
+    
+      <path d="M 888.0484003930761 328.823228800336 A 250 250 0 0 1 890 359.99999999999994 
+              L 820 359.99999999999994 
+              A 180 180 0 0 0 
+              818.5948482830148 337.55272473624194 Z" 
+              fill="#3178c6" style="filter: drop-shadow(0 0 5px #3178c6)" />
+    
+      <text x="929.4334827661019" y="343.63139569678077" font-size="18" text-anchor="middle" fill="#3178c6" style="filter: invert(1)">TypeScript</text>
+    </svg>
