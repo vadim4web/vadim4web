@@ -17,7 +17,7 @@ jobs:
 
       - name: Завантаження SVG з API
         run: |
-          curl -sL "https://github-lang-stats-node.onrender.com/?view=ring&title=VADIM4WEB's Lang Stack (updated: $(date '+%Y-%m-%d %H:%M:%S'))" -o data/lang-stats.svg
+          curl -sL "https://github-lang-stats-node.onrender.com/?view=ring&title=VADIM4WEB%27s%20Lang%20Stack%20(updated%3A%20$(date%20%27+%Y-%m-%d%20%H:%M:%S%27))" -o data/lang-stats.svg
           echo "✅ SVG збережено"
 
       - name: Коміт та пуш оновленого SVG
