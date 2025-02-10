@@ -19,11 +19,13 @@ jobs:
         id: generate_time
         run: |
           current_time=$(date '+%Y-%m-%d %H:%M:%S')
-          echo "TIME_STRING=${current_time}" >> $GITHUB_ENV
+          safe_time=$(echo "$current_time" | sed 's/ /%20/g') # Замінюємо пробіли на %20
+          echo "TIME_STRING=${safe_time}" >> $GITHUB_ENV
 
       - name: Завантаження SVG з API
         run: |
-          curl -sL "https://github-lang-stats-node.onrender.com/?view=ring&title=VADIM4WEB's%20Lang%20Stack%20(updated:%20${{ env.TIME_STRING }})" -o data/lang-stats.svg
+          title="VADIM4WEB%27s%20Lang%20Stack%20(updated:%20${{ env.TIME_STRING }})"
+          curl -sL "https://github-lang-stats-node.onrender.com/?view=ring&title=${title}" -o data/lang-stats.svg
           echo "✅ SVG збережено"
 
       - name: Коміт та пуш оновленого SVG
