@@ -15,9 +15,15 @@ jobs:
       - name: Checkout репозиторій
         uses: actions/checkout@v4
 
+      - name: Створити рядок часу
+        id: generate_time
+        run: |
+          current_time=$(date '+%Y-%m-%d %H:%M:%S')
+          echo "TIME_STRING=${current_time}" >> $GITHUB_ENV
+
       - name: Завантаження SVG з API
         run: |
-          curl -sL "https://github-lang-stats-node.onrender.com/?view=ring&title=VADIM4WEB's%20Lang%20Stack%20(updated:%20$(date '+%Y-%m-%d%20%H:%M:%S'))" -o data/lang-stats.svg
+          curl -sL "https://github-lang-stats-node.onrender.com/?view=ring&title=VADIM4WEB's%20Lang%20Stack%20(updated:%20${{ env.TIME_STRING }})" -o data/lang-stats.svg
           echo "✅ SVG збережено"
 
       - name: Коміт та пуш оновленого SVG
