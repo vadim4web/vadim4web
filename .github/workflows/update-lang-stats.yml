@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: "0 0 * * 0" # Щонеділі о 00:00 UTC
 
+permissions:
+  contents: write # Дає токену права на пуш
+
 jobs:
   update-svg:
     runs-on: ubuntu-latest
@@ -33,6 +36,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/lang-stats.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Автоматичне оновлення мов програмування" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Автоматичне оновлення мов програмування" && git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/vadim4web/vadim4web.git main)
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
